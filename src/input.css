@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+:root {
+  --dal-black: #111111;
+  --dal-gold: #FFC72C;
+  --dal-red: #D00000;
+}
