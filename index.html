@@ -4,20 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="src/output.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="logo.png">
   <title>Dal Mechanical Engineering</title>
 </head>
-<body>
+<body id="top">
   
   <!-- ================= NAVBAR ================= -->
-  <header class="border-b border-white/10 bg-(--dal-charcoal) shadow-sm">
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-(--dal-charcoal)/95 shadow-sm backdrop-blur">
     <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-      <a href="#home" class="flex items-center gap-3">
+      <a href="#top" class="flex items-center gap-3">
         <img
           src="logo.png"
           alt="Dalhousie Mechanical Engineering Society logo"
           class="h-10 w-10 rounded-full object-contain"
         />
-        <span class="text-sm font-semibold tracking-[0.12em] text-(--dal-gold) uppercase">
+        <span class="text-sm font-semibold tracking-[0.12em] text-(--dal-gold)">
           Dal MES
         </span>
       </a>
@@ -25,7 +26,7 @@
       <!-- Primary navigation -->
       <div class="flex items-center gap-8">
         <a
-          href="#home"
+          href="#top"
           class="border-b-2 border-(--dal-red) pb-1 text-[0.75rem] font-semibold uppercase tracking-[0.18em] text-(--dal-gold)"
         >
           Home
@@ -54,7 +55,7 @@
 
   <main id="home" class="bg-(--dal-charcoal) text-white">
     <!-- Hero / welcome section -->
-    <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+    <section class="mx-auto max-w-6xl scroll-mt-28 px-4 py-16 sm:px-6 lg:px-8">
       <div class="text-center">
         <h1 class="text-5xl font-bold text-(--dal-gold) sm:text-6xl">
           Welcome
@@ -65,6 +66,296 @@
         </p>
       </div>
     </section>
+
+    <!-- About Us section -->
+    <section
+      id="about"
+      class="mx-auto max-w-6xl scroll-mt-28 border-t border-white/5 bg-(--dal-charcoal) px-4 py-16 sm:px-6 lg:px-8"
+    >
+      <div class="grid gap-10 md:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] md:items-start">
+        <div>
+          <h2 class="text-2xl font-semibold text-(--dal-gold) sm:text-3xl">
+            About Us
+          </h2>
+          <div class="mt-3 h-0.5 w-12 bg-(--dal-red)"></div>
+          <p class="mt-6 text-sm leading-relaxed text-gray-100 sm:text-base">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae lectus ac quam
+            ultricies finibus eget non urna. Integer lacinia, magna in facilisis tincidunt, sem
+            urna placerat dui, eget ullamcorper lectus velit in nulla.
+          </p>
+          <p class="mt-4 text-sm leading-relaxed text-gray-300 sm:text-base">
+            Curabitur ut mauris id risus porttitor dictum. Vestibulum ante ipsum primis in
+            faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque habitant morbi
+            tristique senectus et netus et malesuada fames ac turpis egestas.
+          </p>
+        </div>
+
+        <div class="rounded-xl border border-white/10 bg-black/20 p-6 text-sm text-gray-100">
+          <h3 class="text-base font-semibold text-(--dal-gold)">
+            What We Do
+          </h3>
+          <ul class="mt-4 space-y-2 list-disc list-inside">
+            <li>Organize academic and career-focused events for mech students.</li>
+            <li>Host social gatherings to build a strong student community.</li>
+            <li>Support student teams, design projects, and competitions.</li>
+            <li>Advocate for student needs within the department.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team section -->
+    <section
+      id="team"
+      class="mx-auto max-w-6xl scroll-mt-28 border-t border-white/5 bg-(--dal-charcoal) px-4 py-16 sm:px-6 lg:px-8"
+    >
+      <div class="mb-8 text-center">
+        <h2 class="text-2xl font-semibold text-(--dal-gold) sm:text-3xl">
+          Our Team
+        </h2>
+        <div class="mx-auto mt-3 h-0.5 w-12 bg-(--dal-red)"></div>
+        <p class="mt-4 text-sm text-gray-300 sm:text-base">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Member 1 -->
+        <article class="flex flex-col justify-between rounded-xl border border-white/10 bg-black/20 p-5 text-sm text-gray-100">
+          <div>
+            <h3 class="text-base font-semibold text-(--dal-gold)">
+              First Last
+            </h3>
+            <p class="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-gray-300">
+              President
+            </p>
+            <p class="mt-4 text-sm leading-relaxed text-gray-200">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget mi interdum,
+              feugiat urna id, posuere est. Nullam id arcu ac urna egestas pharetra.
+            </p>
+          </div>
+          <p class="mt-4 text-xs text-gray-400">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </article>
+
+        <!-- Member 2 -->
+        <article class="flex flex-col justify-between rounded-xl border border-white/10 bg-black/20 p-5 text-sm text-gray-100">
+          <div>
+            <h3 class="text-base font-semibold text-(--dal-gold)">
+              First Last
+            </h3>
+            <p class="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-gray-300">
+              Vice President
+            </p>
+            <p class="mt-4 text-sm leading-relaxed text-gray-200">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel turpis ac ipsum
+              interdum tempus. Vivamus a lorem tincidunt, sagittis est non, auctor metus.
+            </p>
+          </div>
+          <p class="mt-4 text-xs text-gray-400">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </article>
+
+        <!-- Member 3 -->
+        <article class="flex flex-col justify-between rounded-xl border border-white/10 bg-black/20 p-5 text-sm text-gray-100">
+          <div>
+            <h3 class="text-base font-semibold text-(--dal-gold)">
+              First Last
+            </h3>
+            <p class="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-gray-300">
+              Treasurer
+            </p>
+            <p class="mt-4 text-sm leading-relaxed text-gray-200">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et justo in
+              mauris luctus aliquet. Aenean vitae nibh id metus bibendum placerat.
+            </p>
+          </div>
+          <p class="mt-4 text-xs text-gray-400">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </article>
+
+        <!-- Member 4 -->
+        <article class="flex flex-col justify-between rounded-xl border border-white/10 bg-black/20 p-5 text-sm text-gray-100">
+          <div>
+            <h3 class="text-base font-semibold text-(--dal-gold)">
+              First Last
+            </h3>
+            <p class="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-gray-300">
+              Events Coordinator
+            </p>
+            <p class="mt-4 text-sm leading-relaxed text-gray-200">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pulvinar diam at
+              tincidunt rhoncus. Aliquam sed turpis at lorem vulputate aliquam.
+            </p>
+          </div>
+          <p class="mt-4 text-xs text-gray-400">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </article>
+
+        <!-- Member 5 -->
+        <article class="flex flex-col justify-between rounded-xl border border-white/10 bg-black/20 p-5 text-sm text-gray-100">
+          <div>
+            <h3 class="text-base font-semibold text-(--dal-gold)">
+              First Last
+            </h3>
+            <p class="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-gray-300">
+              Communications
+            </p>
+            <p class="mt-4 text-sm leading-relaxed text-gray-200">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum, ipsum
+              id volutpat aliquam, justo ipsum ullamcorper metus, ac pharetra lorem risus eget
+              orci.
+            </p>
+          </div>
+          <p class="mt-4 text-xs text-gray-400">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </article>
+
+        <!-- Member 6 -->
+        <article class="flex flex-col justify-between rounded-xl border border-white/10 bg-black/20 p-5 text-sm text-gray-100">
+          <div>
+            <h3 class="text-base font-semibold text-(--dal-gold)">
+              First Last
+            </h3>
+            <p class="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-gray-300">
+              First-Year Representative
+            </p>
+            <p class="mt-4 text-sm leading-relaxed text-gray-200">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis leo sed
+              leo tincidunt pretium. Nullam euismod, ex id porttitor elementum, enim arcu
+              malesuada ante, nec sagittis neque magna vitae urna.
+            </p>
+          </div>
+          <p class="mt-4 text-xs text-gray-400">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Events section -->
+    <section
+      id="events"
+      class="mx-auto max-w-6xl scroll-mt-28 border-t border-white/5 bg-(--dal-charcoal) px-4 py-16 sm:px-6 lg:px-8"
+    >
+      <div class="mb-8 text-center">
+        <h2 class="text-2xl font-semibold text-(--dal-gold) sm:text-3xl">
+          Events
+        </h2>
+        <div class="mx-auto mt-3 h-0.5 w-12 bg-(--dal-red)"></div>
+        <p class="mt-4 text-sm text-gray-300 sm:text-base">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu consectetur est,
+          sed faucibus nisl.
+        </p>
+      </div>
+
+      <div class="grid gap-6 md:grid-cols-3">
+        <article class="rounded-xl border border-white/10 bg-black/20 p-5 text-sm text-gray-100">
+          <h3 class="text-base font-semibold text-(--dal-gold)">
+            Industry Nights
+          </h3>
+          <p class="mt-3 leading-relaxed text-gray-200">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rhoncus ultrices
+            pellentesque. Vivamus viverra accumsan turpis, id sagittis arcu.
+          </p>
+        </article>
+
+        <article class="rounded-xl border border-white/10 bg-black/20 p-5 text-sm text-gray-100">
+          <h3 class="text-base font-semibold text-(--dal-gold)">
+            Socials & Mixers
+          </h3>
+          <p class="mt-3 leading-relaxed text-gray-200">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, enim nec
+            volutpat efficitur, lorem lacus faucibus eros, quis luctus orci justo vel nibh.
+          </p>
+        </article>
+
+        <article class="rounded-xl border border-white/10 bg-black/20 p-5 text-sm text-gray-100">
+          <h3 class="text-base font-semibold text-(--dal-gold)">
+            Skills Workshops
+          </h3>
+          <p class="mt-3 leading-relaxed text-gray-200">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi
+            tristique senectus et netus et malesuada fames ac turpis egestas.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section
+      id="contact"
+      class="mx-auto max-w-6xl scroll-mt-28 border-t border-white/5 bg-(--dal-charcoal) px-4 py-16 sm:px-6 lg:px-8"
+    >
+      <div class="grid gap-10 md:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] md:items-start">
+        <div>
+          <h2 class="text-2xl font-semibold text-(--dal-gold) sm:text-3xl">
+            Contact Us
+          </h2>
+          <div class="mt-3 h-0.5 w-12 bg-(--dal-red)"></div>
+          <p class="mt-6 text-sm leading-relaxed text-gray-100 sm:text-base">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquam porttitor
+            augue, vitae mattis nisl sollicitudin sed.
+          </p>
+          <p class="mt-4 text-sm leading-relaxed text-gray-300 sm:text-base">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus dui ac ante
+            tincidunt, nec tempor elit egestas.
+          </p>
+        </div>
+
+        <div class="rounded-xl border border-white/10 bg-black/20 p-6 text-sm text-gray-100">
+          <dl class="space-y-3">
+            <div>
+              <dt class="text-xs font-semibold uppercase tracking-[0.18em] text-gray-300">
+                Email
+              </dt>
+              <dd class="mt-1 text-sm text-(--dal-gold)">
+                lorem.ipsum@example.com
+              </dd>
+            </div>
+            <div>
+              <dt class="text-xs font-semibold uppercase tracking-[0.18em] text-gray-300">
+                Instagram
+              </dt>
+              <dd class="mt-1 text-sm text-(--dal-gold)">
+                @loremipsum
+              </dd>
+            </div>
+            <div>
+              <dt class="text-xs font-semibold uppercase tracking-[0.18em] text-gray-300">
+                Office / Lounge
+              </dt>
+              <dd class="mt-1 text-sm text-gray-200">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti.
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="border-t border-white/10 bg-(--dal-charcoal)">
+    <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 py-6 text-xs text-gray-300 sm:flex-row sm:px-6 lg:px-8">
+      <p class="text-center text-(--dal-gold) sm:text-left">
+        © <span id="year">2026</span> Dalhousie Mechanical Engineering Society. All rights reserved.
+      </p>
+      <div class="flex items-center gap-4 text-[0.7rem] uppercase tracking-[0.18em] text-(--dal-gold)">
+        <a href="#contact" class="border-b border-transparent pb-0.5 hover:border-(--dal-red)">
+          Contact
+        </a>
+        <span class="h-3 w-px bg-white/20"></span>
+        <a href="#top" class="border-b border-transparent pb-0.5 hover:border-(--dal-red)">
+          Back to top
+        </a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
